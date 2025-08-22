@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvRecordId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记录ID: 0"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户ID: 0"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名: 未知"
+            android:layout_marginTop="2dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvItemId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品ID: 0"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名称: 未知"
+            android:layout_marginTop="2dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvPurchasePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购买价格: ¥0.00"
+            android:layout_marginTop="8dp"
+
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPurchaseTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购买时间: 2023-01-01 00:00:00"
+            android:layout_marginTop="8dp"
+
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

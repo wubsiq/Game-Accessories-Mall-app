@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="主页"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/nav_inventory"
+        android:title="库存"
+        android:icon="@drawable/ic_inventory"/>
+
+    <item
+        android:id="@+id/nav_sell"
+        android:title="出售"
+        android:icon="@drawable/ic_sell"/>
+
+    <item
+        android:id="@+id/nav_buy"
+        android:title="求购"
+        android:icon="@drawable/ic_buy"/>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="我的"
+        android:icon="@drawable/ic_profile"/>
+</menu>

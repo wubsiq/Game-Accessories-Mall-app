@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="security_questions">
+        <item>点击选择密保问题</item>
+        <item>您母亲的姓名是什么？</item>
+        <item>您父亲的姓名是什么？</item>
+        <item>您的出生地是哪里？</item>
+        <item>您的小学校名是什么？</item>
+        <item>您的第一个宠物的名字是什么？</item>
+    </string-array>
+</resources>

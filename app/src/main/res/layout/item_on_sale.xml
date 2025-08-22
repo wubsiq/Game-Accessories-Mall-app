@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- 商品图片 -->
+        <ImageView
+            android:id="@+id/ivItemImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="商品图片"
+            android:src="@drawable/default_item_image"/>
+
+        <!-- 商品信息 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="16dp">
+
+            <TextView
+                android:id="@+id/tvItemName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="商品名称"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/tvSalePrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¥0.00"
+                android:textSize="18sp"
+
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tvSeller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="上架人: 未知"
+                android:textSize="14sp"
+
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- 操作按钮 -->
+        <Button
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下架"
+
+            android:textColor="@color/white"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

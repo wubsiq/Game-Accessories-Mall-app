@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 饰品图片 -->
+        <ImageView
+            android:id="@+id/ivItemImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:background="#EEEEEE"
+            android:contentDescription="游戏饰品图片"/>
+
+        <!-- 饰品名称 -->
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="饰品名称"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <!-- 饰品价格 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格:"
+                android:textColor="#666666"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tvItemPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥ 0.00"
+                android:textColor="@color/purple_500"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="4dp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvOnSaleCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在售: 0"
+                android:textColor="#666666"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- 分割线 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+            android:layout_marginVertical="12dp"/>
+
+        <!-- 操作按钮 -->
+        <Button
+            android:id="@+id/btnBuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="立即购买"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/purple_500"
+            android:textAllCaps="false"
+            android:paddingVertical="8dp"
+            app:cornerRadius="8dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
